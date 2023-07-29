@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Brust</title>
+    <!-- Google Font Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2fba3f7a77.js" crossorigin="anonymous"></script>
+
+    <!-- Tailwind and Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+
+
+    <!-- Custom Style -->
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
+</head>
+<body class="font-lato">
+
+    <!-- Header Section Start -->
+    <header class="container mx-auto">
+        <!-- Navbar -->
+        <div>
+            <div class="navbar lg:bg-[#F85559] my-12 lg:px-12 lg:py-9 rounded-full">
+                <div class="navbar-start hidden lg:flex text-white">
+                    <ul class="menu menu-horizontal px-1 gap-4">
+                      <li><a href="" class="text-lg font-medium">Home</a></li>
+                      <li><a href="" class="text-lg font-medium">About Us</a></li>
+                      <li><a href="" class="text-lg font-medium">Shop</a></li>
+                      <li><a href="" class="text-lg font-medium">All Fruits</a></li>
+                    </ul>
+                  </div>
+
+                <div class="navbar-center">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                  <div class="flex items-center justify-center gap-4">
+                    <img class="cursor-pointer" src="images/logo.png" alt=""> 
+                    <a class="text-4xl cursor-pointer font-bold md: text-black lg:text-white">Fruit Brust</a>
+                  </div>
+                </div>
+                
+                <div class="navbar-end invisible lg:visible relative items-center">
+                        <input type="text" placeholder="Search here" class="input rounded-full font-normal" />
+                        
+                    <div class="absolute right-4">
+                        <i class="fa-solid fa-magnifying-glass text-[#121212] cursor-pointer"></i>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <!-- Carousel -->
+        <div>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Main Section Start -->
+    <main>
+
+    </main>
+    <!-- Main Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+
+    </footer>
+    <!-- Footer Section End -->
+    
+</body>
+</html>
