@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <!-- Google Font Lato -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,6 +49,9 @@
         }
         .text-wcolor{
             color: #fff;
+        }
+        .hidden-mobile {
+          display: none;
         }
       }
     </style>
@@ -97,10 +101,10 @@
               </div>
         </div>
         <!-- Carousel -->
-        <div class="px-5 lg:px-0 ">
-            <div class="carousel w-full">
+        <div class="px-5 lg:px-0 relative">
+            <div class="carousel w-full ">
                 <!-- Slide 1 -->
-                <div id="slide1" class="carousel-item relative w-full">
+                <div id="slide1" class="carousel-item relative w-full lg:h-[600px]">
                     <div class="hero w-full rounded-lg" style="background-image: url('images/banner1.png');">
                         <div class="hero-overlay rounded-lg"></div>
                         <div class="hero-content text-center text-neutral-content">
@@ -119,7 +123,7 @@
                   </div>
                 </div> 
                 <!-- Slide 2 -->
-                <div id="slide2" class="carousel-item relative w-full">
+                <div id="slide2" class="carousel-item relative w-full lg:h-[600px]">
                     <div class="hero w-full rounded-lg" style="background-image: url('images/banner2.png');">
                         <div class="hero-overlay rounded-lg"></div>
                         <div class="hero-content text-center text-neutral-content">
@@ -138,7 +142,7 @@
                   </div>
                 </div> 
                 <!-- Slide 3 -->
-                <div id="slide3" class="carousel-item relative w-full">
+                <div id="slide3" class="carousel-item relative w-full lg:h-[600px]">
                     <div class="hero w-full rounded-lg" style="background-image: url('images/banner3.png');">
                         <div class="hero-overlay rounded-lg"></div>
                         <div class="hero-content text-center text-neutral-content">
@@ -157,7 +161,7 @@
                   </div>
                 </div> 
                 <!-- Slide 4 -->
-                <div id="slide4" class="carousel-item relative w-full lg:h-[500px]">
+                <div id="slide4" class="carousel-item relative w-full lg:h-[600px]">
                     <div class="hero w-full rounded-lg" style="background-image: url('images/banner4.png');">
                         <div class="hero-overlay rounded-lg"></div>
                         <div class="hero-content text-center text-neutral-content">
@@ -176,20 +180,71 @@
                   </div>
                 </div>
               </div>
+            <!-- Bottom Banner -->
+            <div class="hidden-mobile absolute max-w-3xl lg:left-60 -bottom-20">
+                <div class="flex lg:flex-row bg-white rounded-lg justify-center gap-10 p-7 bottom-4  ">
+                    <div class="flex items-center flex-col">
+                        <img src="images/fruit1.png" alt="">
+                        <p>Blueberry</p>
+                    </div>
+                    <div class="flex items-center flex-col">
+                        <img src="images/fruit2.png" alt="">
+                        <p>Orange</p>
+                    </div>
+                    <div class="flex items-center flex-col">
+                        <img src="images/fruit3.png" alt="">
+                        <p>Mango</p>
+                    </div>
+                    <div class="flex items-center flex-col">
+                        <img src="images/fruit4.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                    <div class="flex items-center flex-col">
+                        <img src="images/fruit5.png" alt="">
+                        <p>Pomegranate</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <!-- Header Section End -->
 
     <!-- Main Section Start -->
-    <main>
+    <main class="container mx-auto">
+        <section>
 
+        </section>
     </main>
     <!-- Main Section End -->
 
     <!-- Footer Section Start -->
-    <footer>
-
-    </footer>
+    <footer class="footer footer-center bg-[#121212] mt-32 px-10 py-10 lg:py-32">
+        <div class="flex items-center justify-center gap-4">
+            <img class="cursor-pointer" src="images/logo.png" alt=""> 
+            <a class="text-xl lg:text-4xl cursor-pointer font-bold text-white">Fruit Brust</a>
+          </div>
+        <div class="grid grid-cols-3 lg:grid-cols-6 gap-4">
+          <a class="link link-hover text-sm lg:text-lg text-white">Home</a> 
+          <a class="link link-hover text-sm lg:text-lg text-white">About us</a> 
+          <a class="link link-hover text-sm lg:text-lg text-white">Shop</a> 
+          <a class="link link-hover text-sm lg:text-lg text-white">All Fruits</a> 
+          <a class="link link-hover text-sm lg:text-lg text-white">Support</a>
+          <a class="link link-hover text-sm lg:text-lg text-white">My Account</a>
+        </div> 
+        <div>
+          <div class="grid grid-cols-3 lg:grid-cols-6 gap-4 text-white ">
+            <a><i class="fa-brands fa-twitter text-2xl  lg:text-4xl"></i></a> 
+            <a><i class="fa-brands fa-facebook text-2xl  lg:text-4xl"></i></a> 
+            <a><i class="fa-brands fa-youtube text-2xl  lg:text-4xl"></i></a>
+            <a><i class="fa-brands fa-linkedin-in text-2xl  lg:text-4xl"></i></a> 
+            <a><i class="fa-brands fa-instagram text-2xl  lg:text-4xl"></i></a> 
+            <a><i class="fa-brands fa-apple text-2xl lg:text-4xl"></i></a>
+          </div>
+        </div> 
+        <div class="text-lg text-white">
+          <p>Copyright &copy; 2023 - All right reserved by Food Brust</p>
+        </div>
+      </footer>
     <!-- Footer Section End -->
     
 </body>
